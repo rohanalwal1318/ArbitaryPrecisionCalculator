@@ -27,10 +27,13 @@ void printList(newList print);
 /* Free the Entire List */
 void freeList(newList f);
 
-/* Perform addition operation and returns resultList, Expected argv[0], and argv[2] as an arguments */
+/* Perform addition operation and returns resultList, Expected argv[1], and argv[3] as an arguments */
 newList sum(char *num1, char *num2);
 
-/* Perform subtraction operation and returns resultList, Expected argv[0] and argv[2] as an arguments */
+/* Perform subtraction operation and returns resultList, Expected argv[1] and argv[3] as an arguments as an operands */
 newList sub(char *num1, char *num2);
+
+/* Perform multiplication operation and returns resultList, Expected argv[1] and argv[3] as an arguments as an operands */
+newList mul(char *num1, char *num2);
 
 #endif
