@@ -8,12 +8,15 @@ int main(){
   printList(summ);
   newList subtract = sub("1999", "999");
   printList(subtract);
-  newList multi = mul("123", "3");
-  printList(multi);
+  newList multi = mul("123", "1234");
+  printListHead(multi);
+  newList divi = division("625", "2565");
+  printListHead(divi);
 
   freeList(t);
   freeList(summ);
   freeList(subtract);
   freeList(multi);
+  freeList(divi);
 
 }

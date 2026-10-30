@@ -47,6 +47,19 @@ void printList(newList print){
 
 }
 
+void printListHead(newList print){
+
+  dnode *t = print.head;
+
+  while(t){
+    printf("%d", t->data);
+    t = t->next;
+  }
+
+  puts("");
+
+}
+
 void freeList(newList f){
 
   dnode *t;

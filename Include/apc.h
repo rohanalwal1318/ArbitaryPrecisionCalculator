@@ -24,6 +24,9 @@ newList createList(char *num);
 /* Print the list from tail towards head */
 void printList(newList print);
 
+/* Print the list from head towards tail */
+void printListHead(newList print);
+
 /* Free the Entire List */
 void freeList(newList f);
 
@@ -35,5 +38,8 @@ newList sub(char *num1, char *num2);
 
 /* Perform multiplication operation and returns resultList, Expected argv[1] and argv[3] as an arguments as an operands */
 newList mul(char *num1, char *num2);
+
+/* Perform Division operation and returns resultList, Expected argv[1] and argv[3] as an arguments as an operands */
+newList division(char *num1, char *num2);
 
 #endif
