@@ -51,7 +51,7 @@ newList sub(char *n1, char *n2){
 
   /* Trim down the Leading zeros, which doesn't make much sense */
   dnode *temp = curr;
-  while(temp->data == 0){
+  while(temp->data == 0 && temp->prev){
     temp = temp->prev;
   }
 

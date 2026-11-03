@@ -1,7 +1,7 @@
 all: demo test
 
-# demo: src/main.c src/dstring.c include/dstring.h
-# 	gcc -g -Iinclude src/main.c src/dstring.c -o demo
+demo: Src/main.c Helper/apcHelper.c Include/apc.h
+	gcc -g -IInclude Src/main.c Helper/apcHelper.c Operations/sum.c Operations/sub.c Operations/mul.c Operations/div.c -o a.out
 
-test: tests/test.c Helper/apcHelper.c Include/apc.h
-	gcc -g -Iinclude tests/test.c Helper/apcHelper.c Operations/sum.c Operations/sub.c Operations/mul.c Operations/div.c -o test_apc
+test: Tests/test.c Helper/apcHelper.c Include/apc.h
+	gcc -g -IInclude Tests/test.c Helper/apcHelper.c Operations/sum.c Operations/sub.c Operations/mul.c Operations/div.c -o test_apc

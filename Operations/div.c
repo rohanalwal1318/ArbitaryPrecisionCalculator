@@ -11,13 +11,14 @@ newList division(char *n1, char *n2){
   dummy.next = dummy.prev = NULL;
   dnode *curr = &dummy;
 
-  int value = 0, printing = 0;
+  long long int value = 0;
+  int printing = 0;
   
   while(temp){
 
     value = (value * 10) + temp->data;
 
-    int q = value / num2;
+    int q = (int)(value / num2);
 
     /* Construction of result list */
     if(q > 0 || printing || temp->next == NULL){
